@@ -3,47 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text Me</title>
-  <meta http-equiv="refresh" content="0;url=sms:+447551725736">
-  <script>
-    window.location.href = "sms:+447551725736";
-  </script>
+
+  <title>Contact Me</title>
+
+  <meta name="description" content="Contact me by text or email.">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      display: flex;
+      margin: 0;
       min-height: 100vh;
+      display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0;
-      background: #f5f5f5;
+      padding: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f3f6f8;
       color: #222;
-      text-align: center;
     }
-    .box {
+
+    .card {
+      width: 100%;
+      max-width: 450px;
       background: white;
-      padding: 32px;
-      border-radius: 16px;
-      max-width: 420px;
-      box-shadow: 0 4px 20px rgba(0,0,0,.08);
+      padding: 40px 30px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.10);
     }
-    a {
-      display: inline-block;
-      margin-top: 16px;
-      padding: 12px 20px;
-      border-radius: 8px;
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 30px;
+    }
+
+    p {
+      margin-bottom: 30px;
+      color: #666;
+      font-size: 16px;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin: 12px 0;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .sms {
       background: #0a66c2;
       color: white;
-      text-decoration: none;
-      font-weight: bold;
+    }
+
+    .email {
+      background: #333;
+      color: white;
+    }
+
+    .button:hover {
+      opacity: 0.85;
     }
   </style>
 </head>
+
 <body>
-  <div class="box">
-    <h1>Opening Messages…</h1>
-    <p>If your SMS app did not open automatically, tap the button below.</p>
-    <a href="sms:+447551725736">Open SMS</a>
+
+  <div class="card">
+
+    <h1>Contact Me</h1>
+
+    <p>Choose how you'd like to get in touch.</p>
+
+    <a class="button sms"
+       href="sms:+447551725736">
+       💬 Send me a text
+    </a>
+
+    <a class="button email"
+       href="mailto:fscott@becrypt.com?subject=LinkedIn%20Enquiry">
+       📧 Send me an email
+    </a>
+
   </div>
+
 </body>
 </html>
