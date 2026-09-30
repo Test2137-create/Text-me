@@ -1,97 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Contact Me</title> <meta name="description" content="Contact me by text."> <style> * { box-sizing: border-box; } body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; font-family: Arial, Helvetica, sans-serif; background: #f3f6f8; color: #222; } .card { width: 100%; max-width: 450px; background: white; padding: 40px 30px; border-radius: 18px; text-align: center; box-shadow: 0 8px 30px rgba(0,0,0,0.10); } h1 { margin-bottom: 10px; font-size: 30px; } p { margin-bottom: 30px; color: #666; font-size: 16px; } .button { display: block; width: 100%; padding: 15px; margin: 12px 0; border-radius: 10px; text-decoration: none; font-size: 17px; font-weight: bold; background: #0a66c2; color: white; } .button:hover { opacity: 0.85; } </style> </head> <body> <div class="card">
+<h1>Contact Me</h1>
 
-  <title>Contact Me</title>
+<p>Opening your messages...</p>
 
-  <meta name="description" content="Contact me by text or email.">
+<a class="button" href="sms:+447551725736">
+  💬 Send me a text
+</a>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f3f6f8;
-      color: #222;
-    }
-
-    .card {
-      width: 100%;
-      max-width: 450px;
-      background: white;
-      padding: 40px 30px;
-      border-radius: 18px;
-      text-align: center;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.10);
-    }
-
-    h1 {
-      margin-bottom: 10px;
-      font-size: 30px;
-    }
-
-    p {
-      margin-bottom: 30px;
-      color: #666;
-      font-size: 16px;
-    }
-
-    .button {
-      display: block;
-      width: 100%;
-      padding: 15px;
-      margin: 12px 0;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 17px;
-      font-weight: bold;
-    }
-
-    .sms {
-      background: #0a66c2;
-      color: white;
-    }
-
-    .email {
-      background: #333;
-      color: white;
-    }
-
-    .button:hover {
-      opacity: 0.85;
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="card">
-
-    <h1>Contact Me</h1>
-
-    <p>Choose how you'd like to get in touch.</p>
-
-    <a class="button sms"
-       href="sms:+447551725736">
-       💬 Send me a text
-    </a>
-
-    <a class="button email"
-       href="mailto:ssimm@becrypt.com?subject=LinkedIn%20Enquiry">
-       📧 Send me an email
-    </a>
-
-  </div>
-
-</body>
-</html>
+</div> <script> window.onload = function() { window.location.href = "sms:+447972656595"; }; </script> </body> </html>
